@@ -1,71 +1,71 @@
 #include <stdio.h>
 #include <locale.h>
-#include "date_in_wordsh.h" //заголовний файл
+#include "date_in_wordsh.h" //Г§Е•ДѓГ®Г«Г®ГўГ­ДЌГ© ГґЕ•Г©Г«
 
-int func_day(day)
+void func_day(day)
 {
-    printf("Перетворена дата-->");
+    printf("ДЋДєД‘ДєЕ€ГўГ®Д‘ДєГ­Е• Г¤Е•Е€Е•-->");
     switch (day / 10) {
     case 0:switch (day) {
-    case 0:printf("Такого дня не iснуе "); break;
-    case 1:printf("перше"); break;
-    case 2:printf("друге"); break;
-    case 3:printf("третє"); break;
-    case 4:printf("четверте"); break;
-    case 5:printf("п'яте"); break;
-    case 6:printf("шосте"); break;
-    case 7:printf("сьоме"); break;
-    case 8:printf("восьме"); break;
-    case 9:printf("дев'яте"); break;
+    case 0:printf("Е‡Е•Д™Г®ДѓГ® Г¤Г­Л™ Г­Дє iЕ„Г­ГіДє "); break;
+    case 1:printf("ДЏДєД‘Е™Дє"); break;
+    case 2:printf("Г¤Д‘ГіДѓДє"); break;
+    case 3:printf("Е€Д‘ДєЕ€Еџ"); break;
+    case 4:printf("Г·ДєЕ€ГўДєД‘Е€Дє"); break;
+    case 5:printf("ДЏ'Л™Е€Дє"); break;
+    case 6:printf("Е™Г®Е„Е€Дє"); break;
+    case 7:printf("Е„ГјГ®Д›Дє"); break;
+    case 8:printf("ГўГ®Е„ГјД›Дє"); break;
+    case 9:printf("Г¤ДєГў'Л™Е€Дє"); break;
     }
     case 1:switch (day) {
-    case 10:printf("десяте"); break;
-    case 11:printf("одинадцяте"); break;
-    case 12:printf("дванадцяте"); break;
-    case 13:printf("тринадцяте"); break;
-    case 14:printf("чотирнадцяте"); break;
-    case 15:printf("п'ятнадцяте"); break;
-    case 16:printf("шiстнадцяте"); break;
-    case 17:printf("сiмнадцяте"); break;
-    case 18:printf("вiсiмнадцяте"); break;
-    case 19:printf("дев'ятнадцяте"); break;
+    case 10:printf("Г¤ДєЕ„Л™Е€Дє"); break;
+    case 11:printf("Г®Г¤ДЌГ­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 12:printf("Г¤ГўЕ•Г­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 13:printf("Е€Д‘ДЌГ­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 14:printf("Г·Г®Е€ДЌД‘Г­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 15:printf("ДЏ'Л™Е€Г­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 16:printf("Е™iЕ„Е€Г­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 17:printf("Е„iД›Г­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 18:printf("ГўiЕ„iД›Г­Е•Г¤Г¶Л™Е€Дє"); break;
+    case 19:printf("Г¤ДєГў'Л™Е€Г­Е•Г¤Г¶Л™Е€Дє"); break;
     }
     case 2: switch (day - 20) {
-    case 0:printf("двадцяте"); break;
-    case 1:printf("двадцять перше"); break;
-    case 2:printf("двадцять друге"); break;
-    case 3:printf("двадцять третє"); break;
-    case 4:printf("двадцять четверте"); break;
-    case 5:printf("двадцять п'яте"); break;
-    case 6:printf("двадцять шосте"); break;
-    case 7:printf("двадцять сьоме"); break;
-    case 8:printf("двадцять восьме"); break;
-    case 9:printf("двадцять дев'яте"); break;
+    case 0:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Дє"); break;
+    case 1:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј ДЏДєД‘Е™Дє"); break;
+    case 2:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Г¤Д‘ГіДѓДє"); break;
+    case 3:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Е€Д‘ДєЕ€Еџ"); break;
+    case 4:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Г·ДєЕ€ГўДєД‘Е€Дє"); break;
+    case 5:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј ДЏ'Л™Е€Дє"); break;
+    case 6:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Е™Г®Е„Е€Дє"); break;
+    case 7:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Е„ГјГ®Д›Дє"); break;
+    case 8:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј ГўГ®Е„ГјД›Дє"); break;
+    case 9:printf("Г¤ГўЕ•Г¤Г¶Л™Е€Гј Г¤ДєГў'Л™Е€Дє"); break;
     }
     case 3: switch (day - 30) {
-    case 0:printf("тридцяте"); break;
-    case 1:printf("тридцять перше"); break;
+    case 0:printf("Е€Д‘ДЌГ¤Г¶Л™Е€Дє"); break;
+    case 1:printf("Е€Д‘ДЌГ¤Г¶Л™Е€Гј ДЏДєД‘Е™Дє"); break;
     }
     }
     return 0;
 }
 
-int func_month(month)
+void func_month(month)
 {
     switch (month) {
-    case 0: printf("Такого мiсяця не iснуе "); break;
-    case 1: printf(" сiчня\n"); break;
-    case 2: printf(" лютого\n"); break;
-    case 3: printf(" березня\n"); break;
-    case 4: printf(" квiтня\n"); break;
-    case 5: printf(" травня\n"); break;
-    case 6: printf(" червня\n"); break;
-    case 7: printf(" липня\n"); break;
-    case 8: printf(" серпня\n"); break;
-    case 9: printf(" вересня\n"); break;
-    case 10: printf(" жовтня\n"); break;
-    case 11: printf(" листопада\n"); break;
-    case 12: printf(" грудня\n"); break;
+    case 0: printf("Е‡Е•Д™Г®ДѓГ® Д›iЕ„Л™Г¶Л™ Г­Дє iЕ„Г­ГіДє "); break;
+    case 1: printf(" Е„iГ·Г­Л™\n"); break;
+    case 2: printf(" Г«ЕЈЕ€Г®ДѓГ®\n"); break;
+    case 3: printf(" ГЎДєД‘ДєГ§Г­Л™\n"); break;
+    case 4: printf(" Д™ГўiЕ€Г­Л™\n"); break;
+    case 5: printf(" Е€Д‘Е•ГўГ­Л™\n"); break;
+    case 6: printf(" Г·ДєД‘ГўГ­Л™\n"); break;
+    case 7: printf(" Г«ДЌДЏГ­Л™\n"); break;
+    case 8: printf(" Е„ДєД‘ДЏГ­Л™\n"); break;
+    case 9: printf(" ГўДєД‘ДєЕ„Г­Л™\n"); break;
+    case 10: printf(" Д‡Г®ГўЕ€Г­Л™\n"); break;
+    case 11: printf(" Г«ДЌЕ„Е€Г®ДЏЕ•Г¤Е•\n"); break;
+    case 12: printf(" ДѓД‘ГіГ¤Г­Л™\n"); break;
     }
     return 0;
 }
